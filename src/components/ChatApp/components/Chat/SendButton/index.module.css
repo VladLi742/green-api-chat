@@ -1,0 +1,24 @@
+.sendButton {
+    border: none;
+    background: #3390ec;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+
+    &:disabled {
+        background-color: #e4eaf0;
+        color: #a0a0a0;
+        cursor: not-allowed;
+    }
+
+    &:hover:not(:disabled) {
+        background-color: #2b7fcb;
+    }
+}
